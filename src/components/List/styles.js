@@ -4,6 +4,7 @@ export const Container = styled.div`
   padding: 0 15px;
   height: 100%;
   flex: 0 0 280px;
+  opacity: ${ props => props.done ? 0.6 : 1 }
 
     & + div {
         border-left: 1px solid rgba(0,0,0,0.05)
@@ -24,7 +25,7 @@ export const Container = styled.div`
             width: 40px;
             height: 40px;
             border-radius: 18px;
-            background: #3b5dfb;
+            background: #715;
             border: 0;
             cursor: pointer;
         }
